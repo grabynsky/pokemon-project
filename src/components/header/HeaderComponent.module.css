@@ -1,0 +1,13 @@
+.mainHeader{
+    margin: 30px 0 20px;
+}
+
+.headerLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: yellowgreen;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 20px;
+}

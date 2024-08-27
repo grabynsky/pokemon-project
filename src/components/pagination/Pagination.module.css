@@ -1,0 +1,25 @@
+.pagination {
+    margin: 20px;
+}
+
+.btn {
+    background-color: yellowgreen;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    margin: 0 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: yellowgreen;
+    background-color: white;
+    border: 1px solid yellowgreen;
+}
+
+.btn:disabled{
+    color: #676767;
+    background-color: white;
+    border: 1px solid yellowgreen;
+}

@@ -1,0 +1,25 @@
+.img {
+    width: 200px;
+}
+
+.link {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: 500;
+}
+
+.link:hover {
+    font-weight: 400;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
