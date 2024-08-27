@@ -1,22 +1,22 @@
 export interface IPokemonById {
-    abilities: Ability[];
     base_experience: number;
     cries: Cries;
-    forms: Form[];
-    game_indices: GameIndex[];
     height: number;
-    held_items: any[];
     id: number;
     is_default: boolean;
     location_area_encounters: string;
-    moves: Move[];
     name: string;
     order: number;
+    species: Species;
+    moves: Move[];
     past_abilities: any[];
     past_types: any[];
-    species: Species;
     sprites: Sprites;
-    // stats: Stat[]; // Додано інтерфейс для статистики
+    forms: Form[];
+    abilities: Ability[];
+    game_indices: GameIndex[];
+    held_items: any[];
+    // stats: Stat[];
     types: any[];
 }
 
@@ -29,6 +29,11 @@ interface Ability {
     slot: number;
 }
 
+interface GameIndex {
+    game_index: number;
+    version: Version;
+}
+
 interface Cries {
     latest: string;
     legacy: string;
@@ -39,10 +44,6 @@ interface Form {
     url: string;
 }
 
-interface GameIndex {
-    game_index: number;
-    version: Version;
-}
 
 interface Version {
     name: string;
@@ -79,11 +80,11 @@ interface Species {
 }
 
 interface Sprites {
-    back_default: string | undefined|null;
+    back_default: string | undefined | null;
     back_female: string | undefined;
     back_shiny: string | undefined;
     back_shiny_female: string | undefined;
-    front_default: string | undefined|null;
+    front_default: string | undefined | null;
     front_female: string | undefined;
     front_shiny: string | undefined;
     front_shiny_female: string | undefined;
@@ -106,8 +107,8 @@ interface DreamWorld {
 interface Home {
     front_default: string | null;
     front_female: string | null;
-    front_shiny: string | null;
     front_shiny_female: string | null;
+    front_shiny: string | null;
 }
 
 interface OfficialArtwork {
@@ -116,14 +117,14 @@ interface OfficialArtwork {
 }
 
 interface Showdown {
-    back_default: string | undefined;
-    back_female: string | null;
-    back_shiny: string | null;
-    back_shiny_female: string | null;
     front_default: string | undefined;
     front_female: string | null;
     front_shiny: string | null;
     front_shiny_female: string | null;
+    back_default: string | undefined;
+    back_female: string | null;
+    back_shiny: string | null;
+    back_shiny_female: string | null;
 }
 
 interface Versions {
@@ -141,26 +142,26 @@ interface GenerationSprites {
 }
 
 interface SpriteDetails {
-    back_default: string | null;
-    back_shiny: string | null;
-    back_transparent?: string | null;
-    back_gray?: string | null;
     front_default: string | null;
     front_shiny: string | null;
     front_transparent?: string | null;
     front_gray?: string | null;
+    back_default: string | null;
+    back_shiny: string | null;
+    back_transparent?: string | null;
+    back_gray?: string | null;
     animated?: AnimatedSprites;
 }
 
 interface AnimatedSprites {
-    back_default: string | null;
-    back_female: string | null;
-    back_shiny: string | null;
-    back_shiny_female: string | null;
     front_default: string | null;
     front_female: string | null;
     front_shiny: string | null;
     front_shiny_female: string | null;
+    back_default: string | null;
+    back_female: string | null;
+    back_shiny: string | null;
+    back_shiny_female: string | null;
 }
 
 interface Stat {
