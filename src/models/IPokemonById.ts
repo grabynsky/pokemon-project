@@ -164,13 +164,13 @@ interface AnimatedSprites {
     back_shiny_female: string | null;
 }
 
-interface Stat {
-    base_stat: number;
-    effort: number;
-    stat: StatDetail;
-}
+// interface Stat {
+//     base_stat: number;
+//     effort: number;
+//     stat: StatDetail;
+// }
 
-interface StatDetail {
-    name: string;
-    url: string;
-}
+// interface StatDetail {
+//     name: string;
+//     url: string;
+// }
